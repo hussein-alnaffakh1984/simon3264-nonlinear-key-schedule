@@ -1,6 +1,6 @@
 # A nonlinear key schedule for Simon 32/64: reproducible analysis
 
-Code and results accompanying the manuscript *A Nonlinear Key Schedule for Simon 32/64: Related-Key and Rotational-XOR Trail Bounds
+Code and results accompanying the manuscript *A Nonlinear Key Schedule for Simon 32/64: Related-Key and Rotational-XOR Trail Analysis
 and Weak-Key Cost* by Zainab H. Jassim, Hussein Ali Hussein Al Naffakh and Umar Farooq Khattak.
 
 **Status: under review, not peer reviewed.** The schedule called `v3` is an experimental research variant of the Simon 32/64 key
