@@ -24,7 +24,7 @@ b.plot([5,6,7,8,9],[0,0,4,6,10],color=B,marker='o'); b.plot([9,10,11],[10,14,24]
 b.plot([5,6,7,8,9,10],[0,0,4,8,14,22],color=O,marker='s')
 b.plot([7,8,9,10],[4,6,8,11],color=A,marker='^',ls='--')
 b.plot([11,11],[25,29],color=O,lw=1.6); b.plot([11,11],[25,29],color=O,marker='_',ms=9,mew=1.6,ls='')
-b.annotate('Proposed: between\n25 and 29',xy=(11,27),xytext=(9.0,28.3),color=INK,fontsize=7,va='center')
+b.annotate('Proposed: between\n25 and 29',xy=(11,27),xytext=(10.7,28.2),color=INK,fontsize=7,va='center',ha='right')
 b.annotate('published values\n(Lu et al.)',xy=(10.5,19),xytext=(10.62,15.2),color=INK,fontsize=7,va='center')
 for x in ax: x.set_xlabel('Rounds'); x.grid(axis='y'); x.set_xticks(range(5,12)); x.set_ylim(-1,31)
 ax[0].set_ylabel('Minimum trail weight  ($-\\log_2$ probability)'); ax[0].set_xlim(5.6,11.4); ax[1].set_xlim(4.6,11.4)
@@ -38,10 +38,14 @@ a.axvline(8,color=B,lw=1.2,ls='--'); a.annotate('Simon 32/64:\ndata weight 8\nfo
 for x,y in((6,21),(7,15),(8,10),(9,2)): a.annotate(str(y),xy=(x,y),xytext=(-9,-9),textcoords='offset points',color=INK,fontsize=7)
 a.set_xlabel('Data-path weight of the trail'); a.set_ylabel('Key weight  ($-\\log_2$ class density)'); a.set_xticks([6,7,8,9]); a.set_xlim(5.6,9.9); a.set_ylim(0,24); a.grid(axis='y')
 b=ax[1]; b.set_title('(b) Weak-key classes: predicted and measured',fontsize=8,loc='left',color=INK)
-pred=[21,15,10,17,24]; meas=[20.93,14.99,10.00,17.01,20.94]
-b.plot([8,25],[8,25],color=SEC,lw=0.8,ls='--'); b.plot(pred,meas,color=O,marker='s',ls='',ms=6)
-for p,m,l,o in zip(pred,meas,['RK, 8 r','RK, 8 r','RK, 8 r','RX, 9 r','RK, 9 r'],[(-52,6),(6,-9),(6,-9),(6,-9),(-18,-13)]): b.annotate('%s: %.2f'%(l,m),xy=(p,m),xytext=o,textcoords='offset points',color=INK,fontsize=7)
-b.set_xlabel('Predicted key weight (SAT model)'); b.set_ylabel('Measured  $-\\log_2$ density'); b.set_xlim(8,26.5); b.set_ylim(8,23.5); b.set_xticks(range(8,27,2)); b.set_yticks(range(8,24,2)); b.grid(True)
+t3=[(21,20.93),(15,14.99),(10,10.00),(17,17.01),(24,20.94)]   # Table 3 (results/verify_weak_*.txt)
+a1=[(8,7.97),(24,24.05),(8,7.98),(25,25.00),(20,20.02),(25,24.91),(18,18.03),(26,25.83),(11,11.00),(20,20.00),(21,20.87),(23,23.19),(19,19.01),(23,22.87),(26,26.42),(4,4.00),(23,23.14)]   # Table A1 (results/verify_classes2.txt)
+b.plot([3,27.5],[3,27.5],color=SEC,lw=0.8,ls='--')
+b.plot([p for p,m in a1],[m for p,m in a1],color=B,marker='o',mfc='white',ls='',ms=5,label='Table A1 (17 classes)')
+b.plot([p for p,m in t3],[m for p,m in t3],color=O,marker='s',ls='',ms=5,label='Table 3 (5 classes)')
+b.annotate('related-key, 9 rounds:\nmodel 24, measured 20.94',xy=(24,20.94),xytext=(14.2,5.6),color=INK,fontsize=7,va='center',arrowprops=dict(arrowstyle='-',color=SEC,lw=0.6,shrinkA=2,shrinkB=4))
+b.legend(loc='upper left',fontsize=7,handletextpad=0.3)
+b.set_xlabel('Predicted key weight (SAT model)'); b.set_ylabel('Measured  $-\\log_2$ density'); b.set_xlim(3,27.5); b.set_ylim(3,27.5); b.set_xticks(range(4,28,4)); b.set_yticks(range(4,28,4)); b.grid(True)
 save(fig,'fig3_weak_key')
 # ---------------- Fig. 1: one key-schedule step, Simon 32/64 and v3
 def box(a,x,y,t,w=1.25,h=0.5,fc='white',ec=INK):
