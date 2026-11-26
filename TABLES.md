@@ -13,7 +13,7 @@ All commands are run from the repository root. Searches are deterministic; exper
 | Table 3 | `results/curve_v3_rk.jsonl`, `results/curve_v3_rx.jsonl`, `results/verify_weak_rk.txt`, `results/verify_weak_rx.txt`, `results/verify_weak_rk9.txt` | `python3 trail_search.py v3 rk 8 8 --objective key --dmax <6|7|8>` ; `... v3 rk 9 9 --objective key --dmax 8` ; `... v3 rx 9 9 --objective key --dmax 8` ; `python3 verify_weak.py <file> 27 14` (30 for the 9-round class) |
 | Table A1 (17 further key classes, Section 4.4) | `results/classes2.jsonl`, `results/verify_classes2.txt` | `for g in $(seq 1 8); do python3 trail_search.py v3 rx 8 9 --gamma $g --objective data --out results/classes2.jsonl; done` ; `python3 trail_search.py v3 rk 7 8 --objective data --out results/classes2.jsonl` ; `python3 verify_weak.py results/classes2.jsonl 29 13` |
 | Table 4 | `results/*_m1111_*`, `results/*_m5555_*`, `results/rk_lite_*` | `python3 trail_search.py v3m<0101|1111|5555> rk 6 9 [--objective data]` |
-| Table 5, bit-bias rows | printed | not included as a script in this release |
+| Table 5, bit-bias rows | `results/bit_bias.txt` | `python3 bit_bias.py 18` |
 | Table 5 (last row) and Table 6 | `results/neural_seeds/*.json` | `python3 neural_distinguisher.py <std|v3> 6 <rmin> <rmax> <seed 1..5>` |
 | Table 7 | `cost_v3/synth_ng45_output.txt`, `cost_v3/bench_output.txt`, `cost_v3/sizes_output.txt` | see `cost_v3/` (`rtl/synth_ng45.py`, `avr_bench.c` with simavr, `main.c`) |
 | Table 8 | `results/simeck_*.jsonl` | `python3 simeck.py selftest` ; `python3 simeck.py <rk|rx> 6 11 [--objective data]` |

@@ -1,0 +1,30 @@
+samples per test 2^18, rounds 1..15, schedules: std = standard, v3 = proposed; * = above threshold
+
+related-key bit bias (16 key bits x 32 output bits): m = 512 tests per round count, threshold 0.00417
+rounds      std        v3
+6         0.50000*   0.50000*
+7         0.50000*   0.50000*
+8         0.50000*   0.50000*
+9         0.37565*   0.02428*
+10        0.06341*   0.00315 
+11        0.01202*   0.00315 
+12        0.00303    0.00284 
+13        0.00335    0.00284 
+14        0.00335    0.00281 
+15        0.00320    0.00309 
+last round above threshold: std 11, v3 9
+
+rotational-XOR bit bias, rotation 1 (65 key offsets x 32 output bits): m = 2080 tests per round count, threshold 0.00447
+rounds      std        v3
+5         0.50000*   0.50000*
+6         0.50000*   0.50000*
+7         0.50000*   0.50000*
+8         0.50000*   0.26667*
+9         0.25038*   0.13252*
+10        0.02251*   0.00326 
+11        0.00382    0.00326 
+12        0.00368    0.00325 
+13        0.00327    0.00325 
+14        0.00350    0.00296 
+15        0.00361    0.00357 
+last round above threshold: std 10, v3 9
