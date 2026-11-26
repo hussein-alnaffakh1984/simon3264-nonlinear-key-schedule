@@ -1,0 +1,5 @@
+numpy
+scipy
+matplotlib
+python-sat>=1.8
+pyapproxmc

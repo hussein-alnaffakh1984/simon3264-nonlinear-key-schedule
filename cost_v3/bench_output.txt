@@ -1,0 +1,5 @@
+baseline  median    3.36 ns [min 3.13 max 3.63]
+ks_std    median   34.22 ns [min 33.56 max 35.85]
+ks_v2     median   49.99 ns [min 48.95 max 51.79]
+ks_v3     median   60.91 ns [min 60.09 max 62.91]
+ratio to std (baseline subtracted): v2 1.51  v3 1.87

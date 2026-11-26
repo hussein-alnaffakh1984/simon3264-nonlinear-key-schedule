@@ -1,0 +1,7 @@
+file results/rx_g1_std.jsonl  samples 2^22  seed 20261126
+kind mode  R | w_key  measured key-path | w_data measured data-path (hits)
+std  rx   5 |  0     2^0.00            |  0     2^0.00     (4194304)
+std  rx   6 |  0     2^0.00            |  0     2^0.00     (4194304)
+std  rx   7 |  0     2^0.00            |  4     2^-4.00    (262391)
+std  rx   8 |  0     2^0.00            |  6     2^-5.30    (106145)
+std  rx   9 |  0     2^0.00            | 10     2^-10.00   (4093)

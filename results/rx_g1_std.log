@@ -1,0 +1,5 @@
+std rx g=1 R= 5 weight= 0 (data 0 + key 0)     0s dK=fff9 0000 0000 0000 dP=0000,fff9 dC=ffff,0000
+std rx g=1 R= 6 weight= 0 (data 0 + key 0)     0s dK=0006 0000 0000 0000 dP=0000,0006 dC=0006,0000
+std rx g=1 R= 7 weight= 4 (data 4 + key 0)     0s dK=803b 0008 0002 0008 dP=0000,8039 dC=8009,0000
+std rx g=1 R= 8 weight= 6 (data 6 + key 0)     0s dK=c036 0000 0002 0004 dP=0000,c036 dC=602a,0000
+std rx g=1 R= 9 weight=10 (data 10 + key 0)    32s dK=c003 0006 0000 0004 dP=0042,c11b dC=600e,0002

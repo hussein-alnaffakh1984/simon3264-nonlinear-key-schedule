@@ -1,0 +1,7 @@
+{"objective": "bound", "bound": 24, "kind": "v3", "mode": "rx", "gamma": 1, "R": 11, "proved_min": 25, "sec": 114.9}
+{"objective": "bound", "bound": 21, "kind": "v3", "mode": "rk", "gamma": 0, "R": 10, "proved_min": 22, "sec": 117.8}
+{"objective": "bound", "bound": 24, "kind": "v3", "mode": "rk", "gamma": 0, "R": 11, "proved_min": 25, "sec": 137.1}
+{"objective": "bound", "bound": 29, "kind": "v3", "mode": "rx", "gamma": 1, "R": 11, "weight": 29, "w_data": 21, "w_key": 8, "sec": 168.5, "K": [38793, 9482, 50703, 6, 0, 4, 0, 0, 0, 1, 12294], "X": [8192, 34067, 66, 16, 4, 0, 0, 0, 0, 0, 1, 12290], "Y": [37530, 8192, 34067, 66, 16, 4, 0, 0, 0, 0, 0, 1]}
+{"objective": "bound", "bound": 9, "kind": "std", "mode": "rx", "gamma": 5, "R": 9, "proved_min": 10, "sec": 10.6}
+{"objective": "bound", "bound": 21, "kind": "std", "mode": "rk", "gamma": 0, "R": 10, "weight": 21, "w_data": 21, "w_key": 0, "sec": 222.0, "K": [3075, 0, 8192, 16384, 3, 24576, 18944, 52706, 9569, 14842], "X": [0, 0, 0, 8192, 32768, 8192, 8192, 43520, 360, 32768, 14480], "Y": [3075, 0, 0, 0, 8192, 32768, 8192, 8192, 43520, 360, 32768]}
+{"objective": "bound", "bound": 24, "kind": "std", "mode": "rk", "gamma": 0, "R": 11, "weight": 24, "w_data": 24, "w_key": 0, "sec": 43.7, "K": [25507, 128, 896, 530, 768, 656, 224, 128, 192, 532, 49219], "X": [0, 0, 128, 32896, 144, 192, 0, 32, 0, 224, 20, 49395], "Y": [25507, 0, 0, 128, 32896, 144, 192, 0, 32, 0, 224, 20]}

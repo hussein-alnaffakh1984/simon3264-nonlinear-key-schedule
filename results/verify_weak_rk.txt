@@ -1,0 +1,5 @@
+file results/curve_v3_rk.jsonl  key trials 2^27  pairs per key 2^14  seed 20261126
+kind mode  R | w_key  keys found / expected  measured | w_data measured data-path (hits/pairs)
+v3   rk   8 | 21        67 / 64.0         2^-20.93 |  6     2^-6.00   (17176/1097728)
+v3   rk   8 | 15      4138 / 4096.0       2^-14.99 |  7     2^-7.01   (32525/4194304)
+v3   rk   8 | 10     131089 / 131072.0      2^-10.00 |  8     2^-7.99   (16510/4194304)

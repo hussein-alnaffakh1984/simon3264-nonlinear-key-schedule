@@ -1,0 +1,7 @@
+T simeck rx g=1 R= 5 weight= 0 (data 0 + key 0)     0s dK=fff9 0000 0000 0000
+T simeck rx g=1 R= 6 weight= 0 (data 0 + key 0)     0s dK=0006 0000 0000 0000
+T simeck rx g=1 R= 7 weight= 2 (data 2 + key 0)     0s dK=0004 0000 0000 0000
+T simeck rx g=1 R= 8 weight= 6 (data 4 + key 2)     0s dK=0004 0000 0000 0000
+T simeck rx g=1 R= 9 weight=10 (data 4 + key 6)     0s dK=0004 0000 0000 0000
+T simeck rx g=1 R=10 weight=14 (data 8 + key 6)     0s dK=0006 0000 0002 0000
+T simeck rx g=1 R=11 weight=21 (data 11 + key 10)     2s dK=0004 0000 0000 0000

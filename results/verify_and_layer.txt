@@ -1,0 +1,1 @@
+input differences checked: 65535 | mismatches with Eq.(6)-(7): 0 | differences with no zero-output x: 0 | 21 s

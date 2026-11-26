@@ -1,0 +1,6 @@
+x86  -Os: nl=inl.  ks_std=84  ks_v2=134  ks_v3=94  ks_v3_inv=82
+x86  -O2: nl=inl.  ks_std=113  ks_v2=159  ks_v3=128  ks_v3_inv=106
+avr  -Os: nl=inl.  ks_std=182  ks_v2=312  ks_v3=224  ks_v3_inv=184
+avr  -O2: nl=inl.  ks_std=180  ks_v2=314  ks_v3=222  ks_v3_inv=184
+m0   -Os: nl=inl.  ks_std=76  ks_v2=96  ks_v3=88  ks_v3_inv=76
+m0   -O2: nl=inl.  ks_std=128  ks_v2=148  ks_v3=148  ks_v3_inv=104

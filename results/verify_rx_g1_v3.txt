@@ -1,0 +1,8 @@
+file results/rx_g1_v3.jsonl  samples 2^22  seed 20261126
+kind mode  R | w_key  measured key-path | w_data measured data-path (hits)
+v3   rx   5 |  0     2^0.00            |  0     2^0.00     (4194304)
+v3   rx   6 |  0     2^0.00            |  0     2^0.00     (4194304)
+v3   rx   7 |  0     2^0.00            |  4     2^-4.00    (261766)
+v3   rx   8 |  2     2^-2.00           |  6     2^-5.99    (16522)
+v3   rx   9 |  4     2^-4.00           | 10     2^-9.83    (288)
+v3   rx  10 | skipped: 2^-18 needs more than 2^22 samples

@@ -1,0 +1,3 @@
+D v3m5555 rx g=1 R= 7 weight= 4 (data 4 + key 6)     0s dK=a000 0000 0004 0018 dP=0000,a000 dC=3416,0000
+D v3m5555 rx g=1 R= 8 weight= 6 (data 6 + key 1)     1s dK=0006 0000 0004 0000 dP=0010,0042 dC=600e,0002
+D v3m5555 rx g=1 R= 9 weight= 8 (data 8 + key 20)     4s dK=aaac 0000 0000 0000 dP=0000,aaac dC=fff9,0000

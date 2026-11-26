@@ -1,0 +1,5 @@
+{"cipher": "simeck", "objective": "data", "mode": "rk", "gamma": 0, "R": 6, "weight": 2, "w_data": 2, "w_key": 2, "sec": 0.0, "K": [16, 8, 0, 0, 0, 8], "X": [8, 0, 0, 0, 0, 0, 8], "Y": [0, 8, 0, 0, 0, 0, 0]}
+{"cipher": "simeck", "objective": "data", "mode": "rk", "gamma": 0, "R": 7, "weight": 2, "w_data": 2, "w_key": 4, "sec": 0.0, "K": [64, 32, 16, 0, 0, 0, 16], "X": [0, 16, 0, 0, 0, 0, 0, 16], "Y": [80, 0, 16, 0, 0, 0, 0, 0]}
+{"cipher": "simeck", "objective": "data", "mode": "rk", "gamma": 0, "R": 8, "weight": 4, "w_data": 4, "w_key": 10, "sec": 0.0, "K": [20, 10, 6, 2, 0, 0, 0, 2], "X": [8, 0, 2, 0, 0, 0, 0, 0, 2], "Y": [4, 8, 0, 2, 0, 0, 0, 0, 0]}
+{"cipher": "simeck", "objective": "data", "mode": "rk", "gamma": 0, "R": 9, "weight": 6, "w_data": 6, "w_key": 18, "sec": 0.1, "K": [21, 14, 7, 3, 1, 0, 0, 0, 1], "X": [0, 6, 0, 1, 0, 0, 0, 0, 0, 1], "Y": [19, 0, 6, 0, 1, 0, 0, 0, 0, 0]}
+{"cipher": "simeck", "objective": "data", "mode": "rk", "gamma": 0, "R": 10, "weight": 8, "w_data": 8, "w_key": 18, "sec": 0.6, "K": [9120, 256, 800, 256, 160, 64, 32, 64, 32, 0], "X": [0, 0, 256, 32, 64, 0, 0, 32, 0, 0, 0], "Y": [9120, 0, 0, 256, 32, 64, 0, 0, 32, 0, 0]}

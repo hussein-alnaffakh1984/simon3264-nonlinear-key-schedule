@@ -1,0 +1,10 @@
+file /tmp/allkey.jsonl  epsilon 0.30 delta 0.05 seed 20261126
+kind mode R | w_data | model: 64-w_key | counted log2(class) | model w_key -> counted w_key | sec
+v3  rk   9 | 15 | 60 | 60.00 |  4 -> 4.00 | 1
+v3  rx   5 |  0 | 64 | 48.00 |  0 -> 16.00 | 0
+v3  rx   6 |  0 | 64 | 64.00 |  0 -> 0.00 | 0
+v3  rx   7 |  4 | 64 | 64.00 |  0 -> 0.00 | 0
+v3  rx   8 |  6 | 62 | 62.01 |  2 -> 1.99 | 1
+v3  rx   9 | 10 | 60 | 60.08 |  4 -> 3.92 | 1
+v3  rx  10 | 18 | 60 | 60.00 |  4 -> 4.00 | 1
+v3  rx   9 |  8 | 47 | 47.03 | 17 -> 16.97 | 1

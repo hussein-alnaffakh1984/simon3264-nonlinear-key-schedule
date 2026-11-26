@@ -1,0 +1,5 @@
+D v3 rk R= 6 weight= 2 (data 2 + key 4)     0s dK=c001 0000 0001 0004 dP=0000,c001 dC=b001,0000
+D v3 rk R= 7 weight= 4 (data 4 + key 2)     0s dK=4b18 5000 6000 1000 dP=4000,4b19 dC=7800,0000
+D v3 rk R= 8 weight= 6 (data 6 + key 23)     0s dK=81eb 0000 0000 0810 dP=0000,81eb dC=d64c,0000
+D v3 rk R= 9 weight= 8 (data 8 + key 24)     3s dK=5555 0000 0000 0000 dP=0000,5555 dC=aaaa,0000
+D v3 rk R=10 weight=11 (data 11 + key 25)   256s dK=0310 0008 0012 1040 dP=0000,0312 dC=9841,0000

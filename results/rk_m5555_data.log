@@ -1,0 +1,4 @@
+D v3m5555 rk R= 6 weight= 2 (data 2 + key 1)     0s dK=006c 0040 0180 0040 dP=0000,006c dC=0100,0000
+D v3m5555 rk R= 7 weight= 4 (data 4 + key 4)     0s dK=45c0 0400 1000 1400 dP=0000,45c0 dC=0d00,0000
+D v3m5555 rk R= 8 weight= 7 (data 7 + key 11)     4s dK=8679 4010 1000 2010 dP=0000,9679 dC=8043,0000
+D v3m5555 rk R= 9 weight= 8 (data 8 + key 20)     5s dK=aaaa 0000 0000 0000 dP=0000,aaaa dC=ffff,0000

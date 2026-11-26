@@ -1,0 +1,6 @@
+| module | cells | area (um^2) | GE (NAND2_X1 = 0.798 um^2) | ABC delay (ps) |
+|---|---:|---:|---:|---:|
+| ks_round_std | 49 | 78.20 | 98.0 | n/a |
+| ks_round_v3 | 81 | 116.51 | 146.0 | n/a |
+| ks_serial_std | 214 | 532.27 | 667.0 | n/a |
+| ks_serial_v3 | 235 | 569.24 | 713.3 | n/a |

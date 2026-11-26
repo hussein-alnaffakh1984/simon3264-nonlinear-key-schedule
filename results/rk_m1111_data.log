@@ -1,0 +1,4 @@
+D v3m1111 rk R= 6 weight= 2 (data 2 + key 0)     0s dK=006c 0040 0180 0040 dP=0000,006c dC=0100,0000
+D v3m1111 rk R= 7 weight= 4 (data 4 + key 2)     0s dK=808b 0008 0020 0028 dP=0000,808b dC=001a,0000
+D v3m1111 rk R= 8 weight= 8 (data 8 + key 8)     7s dK=aaaa 0000 0000 0000 dP=0000,aaaa dC=9999,0000
+D v3m1111 rk R= 9 weight= 8 (data 8 + key 8)     5s dK=aaaa 0000 0000 0000 dP=0000,aaaa dC=ffff,0000
