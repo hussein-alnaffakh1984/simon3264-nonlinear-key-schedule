@@ -96,6 +96,7 @@ Every plotted value is one of the results listed above.
 ## Added 26 Nov, after external review
 ```
 python3 verify_and_layer.py                                   # all 65,535 input differences: 0 mismatches with the model, zero output difference always possible (21 s)
+python3 key_dependence.py 16                                   # dependence of round-key bits on master-key bits and mean Hamming distance (results/key_dependence.txt)
 python3 trail_search.py std rx 9 9 --gamma 5 --bound 9        # NO TRAIL: minimum >= 10 (11 s)  -> minimum over all 15 rotations at 9 rounds is 10
 python3 trail_search.py std rk 10 10 --bound 21               # TRAIL of weight 21 (222 s)       -> Simon <= 21 < 22 <= v3
 python3 trail_search.py std rk 11 11 --bound 24               # TRAIL of weight 24 (44 s)        -> Simon <= 24 < 25 <= v3

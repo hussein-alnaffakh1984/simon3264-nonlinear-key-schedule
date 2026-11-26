@@ -18,6 +18,7 @@ All commands are run from the repository root. Searches are deterministic; exper
 | Table 7 | `cost_v3/synth_ng45_output.txt`, `cost_v3/bench_output.txt`, `cost_v3/sizes_output.txt` | see `cost_v3/` (`rtl/synth_ng45.py`, `avr_bench.c` with simavr, `main.c`) |
 | Table 8 | `results/simeck_*.jsonl` | `python3 simeck.py selftest` ; `python3 simeck.py <rk|rx> 6 11 [--objective data]` |
 | Trail verification (Section 4.5) | `results/verify_rx_g1_*.txt`, `results/verify_rx_allgamma_r9.txt` | `python3 verify_trails.py <trail file> 22` |
+| Key-bit dependence and Hamming distance (Sections 3.5 and 4.5) | `results/key_dependence.txt` | `python3 key_dependence.py 16` |
 | Figures 1–3 | `figures/` | `python3 make_figures.py` |
 
 In the code the proposed schedule is called `v3` and the standard one `std`.
