@@ -1,0 +1,37 @@
+{
+ "kind": "std",
+ "bit": 6,
+ "seed": 5,
+ "n_train": 131072,
+ "n_test": 100000,
+ "threshold": 0.5054587757755651,
+ "results": [
+  {
+   "rounds": 9,
+   "accuracy": 0.91941,
+   "ci95": [
+    0.9177228594613991,
+    0.9210971405386008
+   ],
+   "above_threshold": true
+  },
+  {
+   "rounds": 10,
+   "accuracy": 0.69905,
+   "ci95": [
+    0.6962071276128605,
+    0.7018928723871394
+   ],
+   "above_threshold": true
+  },
+  {
+   "rounds": 11,
+   "accuracy": 0.50324,
+   "ci95": [
+    0.500141032958517,
+    0.5063389670414831
+   ],
+   "above_threshold": false
+  }
+ ]
+}

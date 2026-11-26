@@ -11,8 +11,9 @@ print("file %s  key trials 2^%d  pairs per key 2^%d  seed %d"%(f,LT,LP,SEED)); p
 for line in open(f):
     t=json.loads(line); R,g,rx=t['R'],t['gamma'],t['mode']=='rx'; rot=(lambda v:S.rol(v,g)) if rx else (lambda v:v)
     if t['w_key']>LT-3: print("%-4s %-3s %2d | w_key %d: skipped (needs more than 2^%d key trials)"%(t['kind'],t['mode'],R,t['w_key'],LT)); continue
-    rng=np.random.default_rng([SEED,R,t['w_key'],t['w_data']]); good=[]
-    for _ in range((1<<LT)//CH):
+    lt=min(LT,max(20,t['w_key']+12))          # adaptive: about 4096 keys expected in the class
+    rng=np.random.default_rng([SEED,R,t['w_key'],t['w_data'],t.get('gamma',0)]); good=[]
+    for _ in range((1<<lt)//CH):
         mk=rng.integers(0,65536,(CH,4),dtype=U); mk2=np.stack([rot(mk[:,j])^U(t['K'][j]) for j in range(4)],1).astype(U)
         rk=S.key_schedule(t['kind'],mk,R); rk2=S.key_schedule(t['kind'],mk2,R); ok=np.ones(CH,bool)
         for i in range(4,R): ok&=(rot(rk[i])^rk2[i])==U(t['K'][i])
@@ -23,4 +24,4 @@ for line in open(f):
         x=rng.integers(0,65536,m,dtype=U); y=rng.integers(0,65536,m,dtype=U); rk=S.key_schedule(t['kind'],mk,R); rk2=S.key_schedule(t['kind'],mk2,R)
         cx,cy=S.encrypt(x,y,rk,R); dx,dy=S.encrypt((rot(x)^U(t['X'][0])).astype(U),(rot(y)^U(t['Y'][0])).astype(U),rk2,R)
         hits=int((((rot(cx)^dx)==U(t['X'][R]))&((rot(cy)^dy)==U(t['Y'][R]))).sum()); tot=m
-    print("%-4s %-3s %2d | %2d     %5d / %-7.1f      %-8s | %2d     %-9s (%d/%d)"%(t['kind'],t['mode'],R,t['w_key'],n,2.0**(LT-t['w_key']),("2^%.2f"%np.log2(n/2**LT)) if n else "0",t['w_data'],("2^%.2f"%np.log2(hits/tot)) if hits else "0",hits,tot))
+    print("%-4s %-3s %2d | %2d     %5d / %-7.1f      %-8s | %2d     %-9s (%d/%d)"%(t['kind'],t['mode'],R,t['w_key'],n,2.0**(lt-t['w_key']),("2^%.2f"%np.log2(n/2**lt)) if n else "0",t['w_data'],("2^%.2f"%np.log2(hits/tot)) if hits else "0",hits,tot))

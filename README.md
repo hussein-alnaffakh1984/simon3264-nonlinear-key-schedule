@@ -6,6 +6,8 @@ and Weak-Key Cost* by Zainab H. Jassim, Hussein Ali Hussein Al Naffakh and Umar 
 **Status: under review, not peer reviewed.** The schedule called `v3` is an experimental research variant of the Simon 32/64 key
 schedule. It is not a standard and must not be used to protect real data.
 
+See `TABLES.md` for the file and command behind every table and figure of the manuscript.
+
 Requirements: Python 3.10+, `pip install numpy python-sat` (PySAT 1.8+, solver CaDiCaL 1.5.3). No GPU, no internet.
 
 | File | Purpose |

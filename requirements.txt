@@ -1,5 +1,6 @@
 numpy
 scipy
 matplotlib
+scikit-learn
 python-sat>=1.8
 pyapproxmc
